@@ -4175,14 +4175,14 @@ input, select, textarea {
 
 /* Default styling for larger screens */
 .circle-image {
-    width: 400px;
-    height: 400px;
+    width: 380px;
+    height: 380px;
     border-radius: 60%;
     background-color: white;
     overflow: hidden;
     position: absolute;
-    right: 200px; /* Move it slightly to the left */
-    top: 80px;   /* Bring it higher up */
+    right: 150px; /* Move it slightly to the left */
+    top: 40px;   /* Bring it higher up */
     border: 3px solid #ffffff;
 }
 
