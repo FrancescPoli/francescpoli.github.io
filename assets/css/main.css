@@ -4175,8 +4175,8 @@ input, select, textarea {
 
 /* Default styling for larger screens */
 .circle-image {
-    width: 310px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
     border-radius: 60%;
     background-color: white;
     overflow: hidden;
