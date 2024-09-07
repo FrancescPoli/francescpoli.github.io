@@ -4206,21 +4206,23 @@ input, select, textarea {
 /* Apply resizing to all images in content sections */
 .wrapper .image img {
     max-width: 300px;  /* Resize all images to this width */
-    width: 100%;       /* Make sure they are responsive */
+    width: 100%;       /* Ensure responsiveness */
 }
 
-/* Position the image on the right for the DEVSTART section */
+/* Override resizing and positioning for the DEVSTART image */
+#three .content-image-container img {
+    max-width: 300px; /* Ensures DEVSTART image is the same size as others */
+    width: 100%;      /* Keep image responsive */
+    margin-left: 20px; /* Space between image and text */
+    margin-right: 0;
+}
+
+/* Flexbox layout to position the DEVSTART image on the right */
 #three .content-image-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ensures items are spaced properly */
-}
-
-#three .content-image-container img {
-    margin-left: 20px; /* Adds space between the image and text */
-    margin-right: 0;
-    order: 2; /* Image comes second, ensuring it appears on the right */
+    justify-content: space-between; /* Image on the right, content on the left */
 }
 
 #three .content {
@@ -4228,3 +4230,6 @@ input, select, textarea {
     order: 1; /* Content comes first */
 }
 
+#three .content-image-container img {
+    order: 2; /* Image comes second, ensuring it appears on the right */
+}
