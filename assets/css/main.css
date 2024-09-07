@@ -4240,7 +4240,7 @@ input, select, textarea {
     justify-content: center;      /* Horizontally center the images */
     align-items: center;          /* Vertically center the images (if necessary) */
     height: 300px;                /* Set a fixed height for the image container */
-    width: 120%;                  /* Make the container responsive */
+    width: 500px;                  /* Make the container responsive */
     overflow: hidden;             /* Hide overflow content */
 }
 
