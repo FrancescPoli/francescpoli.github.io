@@ -4202,3 +4202,20 @@ input, select, textarea {
         display: block;     /* Ensures it's treated as a block-level element */
     }
 }
+
+/* Flexbox layout to prevent text overlap */
+.content-image-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.content-image-container img {
+    max-width: 400px; /* Control the image size */
+    width: 100%;
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+.content {
+    flex: 1; /* Ensures the content takes up the remaining space */
+}
