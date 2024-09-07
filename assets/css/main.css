@@ -4235,8 +4235,8 @@ input, select, textarea {
 }
 
 /* Exclude Outreach section from resizing */
-#four .image img {
-    width: 400px;        /* Set a fixed width for Outreach images */
+#four .content-image-container img {
+    width: 500px;        /* Set a fixed width for Outreach images */
     height: 300px;       /* Set a fixed height for Outreach images */
     object-fit: cover;   /* Crops the image to fit the container */
     overflow: hidden;
