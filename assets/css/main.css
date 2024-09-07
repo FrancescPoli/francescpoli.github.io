@@ -4203,26 +4203,28 @@ input, select, textarea {
     }
 }
 
-/* Flexbox layout to prevent text overlap */
-.content-image-container {
+/* Apply resizing to all images in content sections */
+.wrapper .image img {
+    max-width: 300px;  /* Resize all images to this width */
+    width: 100%;       /* Make sure they are responsive */
+}
+
+/* Position the image on the right for the DEVSTART section */
+#three .content-image-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between; /* Ensures items are spaced properly */
 }
 
-.content-image-container img {
-    max-width: 300px;
-    width: 100%;
+#three .content-image-container img {
     margin-left: 20px; /* Adds space between the image and text */
-    margin-right: 0;   /* Ensure no margin on the right */
+    margin-right: 0;
+    order: 2; /* Image comes second, ensuring it appears on the right */
 }
 
-.content {
+#three .content {
     flex: 1;
-    order: 1; /* Ensure content comes first */
+    order: 1; /* Content comes first */
 }
 
-.content-image-container img {
-    order: 2; /* Ensure image comes second */
-}
