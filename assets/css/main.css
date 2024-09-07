@@ -4234,10 +4234,10 @@ input, select, textarea {
     order: 2; /* Image comes second, ensuring it appears on the right */
 }
 
-/* Exclude Outreach section from resizing */
-#four .content-image-container img {
-    width: 500px;        /* Set a fixed width for Outreach images */
-    height: 300px;       /* Set a fixed height for Outreach images */
-    object-fit: cover;   /* Crops the image to fit the container */
-    overflow: hidden;
+/* Correctly target Outreach section images */
+#four .features .image img {
+    width: 500px;       /* Set the desired width for Outreach images */
+    height: 300px;      /* Set the desired height */
+    object-fit: cover;  /* Crops the image to fit the container */
+    overflow: hidden;   /* Ensures excess image is hidden */
 }
