@@ -4207,15 +4207,22 @@ input, select, textarea {
 .content-image-container {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures items are spaced properly */
 }
 
 .content-image-container img {
-    max-width: 400px; /* Control the image size */
+    max-width: 400px;
     width: 100%;
-    margin-right: 20px; /* Adds space between the image and text */
+    margin-left: 20px; /* Adds space between the image and text */
+    margin-right: 0;   /* Ensure no margin on the right */
 }
 
 .content {
-    flex: 1; /* Ensures the content takes up the remaining space */
+    flex: 1;
+    order: 1; /* Ensure content comes first */
+}
+
+.content-image-container img {
+    order: 2; /* Ensure image comes second */
 }
