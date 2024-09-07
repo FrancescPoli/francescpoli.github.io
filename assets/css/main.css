@@ -4181,7 +4181,7 @@ input, select, textarea {
     background-color: white;
     overflow: hidden;
     position: absolute;
-    right: 160px; /* Move it slightly to the left */
+    right: 170px; /* Move it slightly to the left */
     top: 20px;   /* Bring it higher up */
     border: 3px solid #ffffff;
 }
