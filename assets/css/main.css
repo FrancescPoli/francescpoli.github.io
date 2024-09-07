@@ -4233,3 +4233,11 @@ input, select, textarea {
 #three .content-image-container img {
     order: 2; /* Image comes second, ensuring it appears on the right */
 }
+
+/* Exclude Outreach section from resizing */
+#four .image img {
+    width: 400px;        /* Set a fixed width for Outreach images */
+    height: 300px;       /* Set a fixed height for Outreach images */
+    object-fit: cover;   /* Crops the image to fit the container */
+    overflow: hidden;
+}
