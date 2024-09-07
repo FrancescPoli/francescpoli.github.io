@@ -4182,7 +4182,7 @@ input, select, textarea {
     overflow: hidden;
     position: absolute;
     right: 160px; /* Move it slightly to the left */
-    top: 30px;   /* Bring it higher up */
+    top: 20px;   /* Bring it higher up */
     border: 3px solid #ffffff;
 }
 
