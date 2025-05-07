@@ -4252,22 +4252,35 @@ input, select, textarea {
 }
 
 
-/* === Outreach layout fix === */
+/* === Outreach layout final fix === */
 #four .features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    align-items: flex-start;
+    align-items: flex-start;           /* allow each card its own height */
 }
 
+/* keep two columns on wide screens */
 #four .features article {
-    width: calc(50% - 2.5em);
+    width: calc(50% - 1.5em);
 }
 
+/* phone & small tablet: one per row */
 @media screen and (max-width: 980px) {
     #four .features article {
         width: 100%;
     }
 }
-/* === end outreach layout fix === */
+
+/* restore edge‑to‑edge images inside cards */
+#four .features article .image {
+    display: block;
+    margin: -1.75em 0 1.75em -1.75em;
+    width: calc(100% + 3.5em);
+    overflow: hidden;
+}
+
+#four .features article .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* === end Outreach layout final fix === */
 
