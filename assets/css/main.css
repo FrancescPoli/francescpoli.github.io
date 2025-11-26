@@ -4272,17 +4272,23 @@ input, select, textarea {
 }
 
 /* restore edge‑to‑edge images inside cards */
+/* Outreach cards: image at the top, full-width, same height on both sides */
 #four .features article .image {
     display: block;
     margin: -1.75em 0 1.75em -1.75em;
     width: calc(100% + 3.5em);
     overflow: hidden;
+
+    /* force consistent height while staying responsive */
+    aspect-ratio: 4 / 3;  /* try 16 / 9 if you prefer a “flatter” image */
 }
 
 #four .features article .image img {
+    display: block;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover;  /* fills frame without stretching, crops edges if needed */
 }
+
 /* === end Outreach layout final fix === */
 
