@@ -3016,27 +3016,21 @@ input, select, textarea {
 			}
 
 			.features article .image {
-				border-radius: 5px 5px 0 0;
-				display: block;
-				margin-bottom: 1.75em;
-				margin-left: -1.75em;
-				margin-top: -1.75em;
-				position: relative;
-				width: calc(100% + 3.5em);
-
-				/* New: keep image and card nicely aligned on all screen sizes */
-				aspect-ratio: 16 / 9;  /* tweak to 4 / 3 or 3 / 2 if you prefer */
-				overflow: hidden;
+			    border-radius: 5px 5px 0 0;
+			    display: block;
+			    margin-bottom: 1.75em;
+			    position: relative;
+			    width: 100%;
+			    overflow: hidden;     /* hides any tiny overflow */
 			}
-
+			
 			.features article .image img {
-				border-radius: 5px 5px 0 0;
-				width: 100%;
-
-				/* New: make the image fill the frame without distortion */
-				height: 100%;
-				object-fit: cover;
+			    display: block;
+			    border-radius: 5px 5px 0 0;
+			    width: 100%;          /* fills the card horizontally */
+			    height: auto;         /* keeps aspect ratio, no stretching */
 			}
+			
 
 		@media screen and (max-width: 980px) {
 
