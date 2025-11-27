@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Outreach – Your Name</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+        <!-- Outreach-specific fixes: layout + images -->
+        <style>
+            /* Two cards side by side on larger screens */
+            #four .features {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3em;
+                margin: 0 0 2em;
+            }
+
+            #four .features article {
+                background-color: #353849;
+                border-radius: 5px;
+                padding: 1.75em 1.75em 1.5em;
+                flex: 1 1 calc(50% - 1.5em); /* left/right columns */
+                margin: 0; /* override any older margin rules */
+            }
+
+            #four .features article h3.major {
+                margin-top: 0.25em;
+                margin-bottom: 1em;
+            }
+
+            /* Full-bleed header images with fixed aspect ratio */
+            #four .features article .image {
+                display: block;
+                margin: -1.75em -1.75em 1.75em;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                aspect-ratio: 4 / 3;
+            }
+
+            #four .features article .image img {
+                width: 100%;
+                height: 100%;
+                max-width: none;        /* override .wrapper .image img { max-width: 300px; } */
+                object-fit: cover;      /* crop nicely, no distortion */
+                display: block;
+            }
+
+            /* Stack cards on narrower screens */
+            @media screen and (max-width: 980px) {
+                #four .features article {
+                    flex: 1 1 100%;
+                }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="index.html">Home</a></h1>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <div class="inner">
+                    <h2>Menu</h2>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">About</a></li>
+                        <li><a href="outreach.html">Outreach</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                    <a href="#" class="close">Close</a>
+                </div>
+            </nav>
+
+            <!-- Page wrapper -->
+            <section id="wrapper">
+
+                <!-- Page header (big title area with background + tilted stripes from main.css) -->
+                <header>
+                    <!--div class="inner">
+                        <h2>Outreach</h2>
+                        <p>Talks, activities, and collaborations beyond the lab.</p>
+                    </div-->
+                </header>
+
+                <!-- Outreach content -->
+                <section id="four" class="wrapper alt style1">
+                    <div class="inner">
+                        <h2 class="major">Outreach</h2>
+
+                        <section class="features">
+                            <!-- LEFT: Talks -->
+                            <article>
+                                <a href="#" class="image">
+                                    <img src="images/bcccd23.jpg" alt="Talks" loading="lazy" decoding="async" />
+                                </a>
+                                <h3 class="major">Talks & Podcasts</h3>
+
+                                <!-- BCCCD25 -->
+                                <h4>BCCCD25 Symposium</h4>
+                                <p>Developmental change in curiosity</p>
+                                <a href="https://www.youtube.com/watch?v=vPxMyfUJO1A"
+                                   class="special" target="_blank">
+                                    Watch on YouTube
+                                </a>
+
+                                <hr />
+
+                                <!-- ICDL 2025 -->
+                                <h4>ICDL 2025</h4>
+                                <p>Exploration patterns in spontaneous self-touch actions in infancy</p>
+                                <a href="https://www.youtube.com/watch?v=OwGvCDxMd94&list=PLQL6z4JeTTQmodlMcLj5oqmxBh_BkLVMI"
+                                   class="special" target="_blank">
+                                    Watch on YouTube
+                                </a>
+
+                                <hr />
+
+                                <!-- BCCCD23 -->
+                                <h4>BCCCD23 Symposium</h4>
+                                <p>Learning how to explore: the developmental mechanisms of information seeking</p>
+                                <a href="https://www.youtube.com/watch?v=QKz_4BITKT4&t=3s&ab_channel=CognitiveDevelopmentCenterCEU"
+                                   class="special" target="_blank">
+                                    Watch on YouTube
+                                </a>
+
+								<hr />
+
+                                <!-- the monkey dance podcast -->
+                                <h4>The Monkey Dance Podcast</h4>
+                                <p>How to make a curious mind</p>
+                                <a href="https://www.youtube.com/watch?v=eVUE-fwRyqg"
+                                   class="special" target="_blank">
+                                    Watch on YouTube
+                                </a>
+                            </article>
+
+                            <!-- RIGHT: In the news -->
+                            <article>
+                                <a href="#" class="image">
+                                    <img src="images/derspiegel.jpg" alt="In the news" loading="lazy" decoding="async" />
+                                </a>
+                                <h3 class="major">In the news</h3>
+
+                                <a href="https://www.forbes.com/sites/alisonescalante/2025/02/10/parents-these-childhood-errors-can-be-good-for-your-kid-research-finds/"
+                                   class="special" target="_blank">
+                                    Forbes 2025
+                                </a>
+                                <a href="Documents/Der_Spiegel_Article.pdf"
+                                   class="special" target="_blank">
+                                    Der Spiegel 2020
+                                </a>
+                                <a href="Documents/Magazine_Jonggeleerd-Spring2021_english-dutch.pdf"
+                                   class="special" target="_blank">
+                                    Jong Geleerd 2021
+                                </a>
+                                <a href="Documents/Magazine_Jonggeleerd-Spring2022_english-dutch.pdf"
+                                   class="special" target="_blank">
+                                    Jong Geleerd 2022
+                                </a>
+                            </article>
+                        </section>
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- Footer (reuse same structure as index.html) -->
+            <section id="footer">
+                <div class="inner">
+                    <!-- your footer content here, same as index.html -->
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Scripts (same as index.html) -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
