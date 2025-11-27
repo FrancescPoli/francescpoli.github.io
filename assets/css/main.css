@@ -4234,53 +4234,47 @@ input, select, textarea {
     order: 2; /* Image comes second, ensuring it appears on the right */
 }
 
-/* Center and size images inside the Outreach section */
-#four .features .image {
-    display: flex;               /* Use flexbox to align items */
-    justify-content: center;      /* Horizontally center the images */
-    align-items: center;          /* Vertically center the images (if necessary) */
-    height: auto;
-    width: 100%;                  /* Make the container responsive */
-    overflow: hidden;             /* Hide overflow content */
-}
+/* === Outreach (Talks + In the news) cards === */
+/* Scoped to section #four so it doesn't affect other .features grids */
 
-#four .features .image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;              /* Ensure the image fits within the container's width */
-    object-fit: cover;            /* Crop and cover the container, preventing distortion */
-}
-
-
-/* === Outreach layout final fix === */
 #four .features {
-    align-items: flex-start;           /* allow each card its own height */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;              /* space between the two cards */
+    margin: 0 0 2em;
 }
 
-/* keep two columns on wide screens */
 #four .features article {
-    width: calc(50% - 1.5em);
+    background-color: #353849;
+    border-radius: 5px;
+    padding: 1.75em 1.75em 1.5em;
+    flex: 1 1 calc(50% - 1.5em);   /* two columns on desktop */
+    margin: 0;                      /* override older .features margins */
 }
 
-/* phone & small tablet: one per row */
-@media screen and (max-width: 980px) {
-    #four .features article {
-        width: 100%;
-    }
+#four .features article h3.major {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
 }
 
-/* restore edge‑to‑edge images inside cards */
+/* Card header image — full-bleed, fixed aspect ratio */
 #four .features article .image {
     display: block;
-    margin: -1.75em 0 1.75em -1.75em;
-    width: calc(100% + 3.5em);
+    margin: -1.75em -1.75em 1.75em;
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
+    aspect-ratio: 4 / 3;
 }
 
 #four .features article .image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
-/* === end Outreach layout final fix === */
 
+/* Stack cards on tablets/phones */
+@media screen and (max-width: 980px) {
+    #four .features article {
+        flex: 1 1 100%;
+    }
+}
