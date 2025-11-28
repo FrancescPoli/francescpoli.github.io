@@ -4272,9 +4272,45 @@ input, select, textarea {
     object-fit: cover;
 }
 
+
+
 /* Stack cards on tablets/phones */
 @media screen and (max-width: 980px) {
     #four .features article {
         flex: 1 1 100%;
     }
+}
+
+/* Override: news titles in normal case (not uppercase) */
+.news-entry > a.special {
+    text-transform: none;
+    letter-spacing: 0.03em;  /* a bit less spaced than default */
+}
+
+/* === News list styling (Outreach) === */
+
+.news-entry {
+    margin-bottom: 1.1em;      /* space between items */
+}
+
+.news-entry > a.special {
+    text-transform: none;      
+    letter-spacing: 0.03em;
+    margin-bottom: 0.1em;
+    display: block;            /* ensure block so alignment applies cleanly */
+    text-align: right;         /* title aligned to the right */
+}
+
+/* outlet name: slim, uppercase, right-aligned under the title */
+.news-entry .news-source {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: rgba(255, 255, 255, 0.6);
+
+    display: block;
+    margin-top: 0.05em;
+    text-align: right;
 }
